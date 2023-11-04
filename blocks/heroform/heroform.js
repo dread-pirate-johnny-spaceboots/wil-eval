@@ -1,5 +1,6 @@
 const stringToId = str => str.replace(/\W/g, '_').toLowerCase()
 const isEmail = /^[^\s@]+@(?<provider>[^\s@]+)\.[^\s@]+$/
+const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const ctaOnClick = event => {
     const nameNode = document.getElementById('name')
@@ -50,8 +51,8 @@ const openModal = (userName, emailProvider) => {
     const provider = document.getElementById('email-provider')
     const open = lightbox.dataset.open !== "true"
     
-    name.innerText = userName.split(" ")[0]
-    provider.innerText = emailProvider.charAt(0).toUpperCase() + emailProvider.slice(1)
+    name.innerText = toTitleCase(userName.split(" ")[0])
+    provider.innerText = toTitleCase(emailProvider)
     lightbox.dataset.open = open
     modal.dataset.open = open
     document.body.style.overflow = open ? 'hidden' : 'unset'
