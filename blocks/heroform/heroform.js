@@ -50,7 +50,7 @@ const openModal = (userName, emailProvider) => {
     const provider = document.getElementById('email-provider')
     const open = lightbox.dataset.open !== "true"
     
-    name.innerText = userName
+    name.innerText = userName.split(" ")[0]
     provider.innerText = emailProvider
     lightbox.dataset.open = open
     modal.dataset.open = open
