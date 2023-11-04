@@ -1,0 +1,103 @@
+.heroform > div {
+    display: flex;
+    gap: 4rem;
+}
+
+#text-to-stop-aem-from-creating-a-second-block-when-an-image-is-the-first-child {
+    display: none;
+}
+
+.copy {
+    max-width: 490px;
+}
+
+.form {
+    max-width: 420px;
+    margin-top: 2rem;
+}
+
+.copy picture {
+    display: block;
+    max-width: 128px;
+    width: 100%;
+}
+
+.copy h1 {
+    font-size: var(--heading-font-size-l);
+    color: var(--dark-text-color);
+    font-weight: bold;
+}
+
+.copy h1 strong {
+    color: var(--primary-color);
+}
+
+.form > div {
+    position: relative;
+    border: 2px solid var(--border-color);
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.form em {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    background: var(--secondary-color);
+    font-size: var(--body-font-size-s);
+    padding: 15px 23px;
+    color: var(--dark-text-color);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form h1 {
+    font-size: var(--heading-font-size-m);
+    font-weight: 600;
+    color: var(--dark-text-color);
+}
+
+.form label {
+    font-weight: 600;
+    font-size: var(--body-font-size-xs);
+    color: var(--dark-text-color);
+}
+
+.form input[type="text"] {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: var(--body-font-size-s);
+    margin-bottom: .25rem;
+}
+
+.form .checkbox {
+    margin-top: 1rem;
+}
+
+.form .validation-error {
+    color: var(--primary-color);
+    font-size: var(--body-font-size-xs);
+    margin: 0;
+}
+
+.checkbox label a {
+    text-decoration: underline;
+}
+
+.form button {
+    width: 100%;
+    text-align: center;
+    color: var(--invert-text-color);
+    border-radius: 12px;
+    background: var(--primary-color);
+    font-size: var(--body-font-size-m);
+    padding: 18px 0;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .heroform > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
