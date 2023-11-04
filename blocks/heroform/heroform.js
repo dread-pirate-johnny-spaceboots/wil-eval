@@ -51,7 +51,7 @@ const openModal = (userName, emailProvider) => {
     const open = lightbox.dataset.open !== "true"
     
     name.innerText = userName.split(" ")[0]
-    provider.innerText = emailProvider
+    provider.innerText = emailProvider.charAt(0).toUpperCase() + emailProvider.slice(1)
     lightbox.dataset.open = open
     modal.dataset.open = open
     document.body.style.overflow = open ? 'hidden' : 'unset'
